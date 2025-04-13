@@ -1,21 +1,21 @@
-import { CommonModule } from '@angular/common';
+import { NgClass } from '@angular/common';
 import {
   ChangeDetectionStrategy,
   Component,
   HostListener,
+  signal,
 } from '@angular/core';
-import { LucideAngularModule, X, MenuIcon } from 'lucide-angular';
+import { LucideAngularModule, MenuIcon, X } from 'lucide-angular';
 
 @Component({
   selector: 'JM-navigation',
-  imports: [CommonModule, LucideAngularModule],
+  imports: [LucideAngularModule, NgClass],
   templateUrl: './navigation.component.html',
-  styles: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class NavigationComponent {
-  isMenuOpen = false;
-  isScrolled = false;
+  isMenuOpen = signal(false);
+  isScrolled = signal(false);
 
   icons = {
     x: X,
@@ -31,14 +31,10 @@ export class NavigationComponent {
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
-    this.isScrolled = window.scrollY > 20;
+    this.isScrolled.set(window.scrollY > 20);
   }
 
   toggleMenu() {
-    this.isMenuOpen = !this.isMenuOpen;
-  }
-
-  closeMenu() {
-    this.isMenuOpen = false;
+    this.isMenuOpen.update((prev) => !prev);
   }
 }
