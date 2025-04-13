@@ -25,8 +25,7 @@ export class NavigationComponent {
   navLinks = [
     { href: '#about', label: 'About' },
     { href: '#skills', label: 'Skills' },
-    { href: '#projects', label: 'Projects' },
-    { href: '#contact', label: 'Contact' },
+    // { href: '#projects', label: 'Projects' },
   ];
 
   @HostListener('window:scroll', [])
