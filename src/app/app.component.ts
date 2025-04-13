@@ -1,13 +1,17 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 import { NavigationComponent } from './navigation/navigation.component';
+import { HeroComponent } from './hero/hero.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, NavigationComponent],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css',
+  imports: [NavigationComponent, HeroComponent],
+  template: `
+    <div className="min-h-screen bg-gray-50">
+      <JM-navigation></JM-navigation>
+      <main>
+        <JM-hero></JM-hero>
+      </main>
+    </div>
+  `,
 })
-export class AppComponent {
-  title = 'JeevanMahesha.github.io';
-}
+export class AppComponent {}
