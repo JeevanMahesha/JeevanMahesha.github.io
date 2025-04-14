@@ -1,0 +1,43 @@
+<nav
+  [ngClass]="{
+    'bg-white shadow-md py-4': isScrolled(),
+    'bg-transparent py-6': !isScrolled()
+  }"
+  class="fixed w-full z-50 transition-all duration-300"
+>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center">
+      <a href="#" class="text-2xl font-bold text-blue-600"> JM </a>
+      <div class="hidden md:flex space-x-8">
+        @for (link of navLinks; track $index) {
+        <a
+          [href]="link.href"
+          class="text-gray-600 hover:text-blue-600 transition-colors"
+        >
+          {{ link.label }}
+        </a>
+        }
+      </div>
+      <button class="md:hidden text-gray-600" (click)="toggleMenu()">
+        @if (isMenuOpen()) {
+        <lucide-icon [name]="icons.x" size="24"></lucide-icon>
+        } @else {
+        <lucide-icon [name]="icons.menu" size="24"></lucide-icon>
+        }
+      </button>
+    </div>
+    @if (isMenuOpen()) {
+    <div class="md:hidden mt-4">
+      @for (link of navLinks; track $index) {
+      <a
+        [href]="link.href"
+        class="block py-2 text-gray-600 hover:text-blue-600 transition-colors"
+        (click)="isMenuOpen.set(false)"
+      >
+        {{ link.label }}
+      </a>
+      }
+    </div>
+    }
+  </div>
+</nav>
