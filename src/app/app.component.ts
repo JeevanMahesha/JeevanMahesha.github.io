@@ -15,7 +15,7 @@ import { SkillsComponent } from './skills/skills.component';
     SkillsComponent,
   ],
   template: `
-    <div className="min-h-screen bg-gray-50">
+    <div class="min-h-screen bg-gray-50">
       <JM-navigation></JM-navigation>
       <main>
         <JM-hero></JM-hero>
