@@ -5,7 +5,6 @@ import { GithubIcon, LucideAngularModule, ExternalLink } from 'lucide-angular';
   selector: 'JM-projects',
   imports: [LucideAngularModule],
   templateUrl: './projects.html',
-  styles: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ProjectsComponent {

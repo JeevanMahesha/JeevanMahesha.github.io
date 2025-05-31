@@ -11,7 +11,6 @@ import {
   selector: 'JM-footer',
   imports: [LucideAngularModule],
   templateUrl: './footer.html',
-  styles: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class FooterComponent {
