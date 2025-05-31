@@ -7,7 +7,7 @@ import { GithubIcon, LucideAngularModule, ExternalLink } from 'lucide-angular';
   templateUrl: './projects.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ProjectsComponent {
+export class Projects {
   icons = {
     github: GithubIcon,
     external: ExternalLink,

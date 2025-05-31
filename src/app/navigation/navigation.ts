@@ -13,7 +13,7 @@ import { LucideAngularModule, MenuIcon, X } from 'lucide-angular';
   templateUrl: './navigation.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class NavigationComponent {
+export class Navigation {
   isMenuOpen = signal(false);
   isScrolled = signal(false);
 

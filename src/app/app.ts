@@ -1,20 +1,13 @@
 import { Component } from '@angular/core';
-import { AboutComponent } from './about/about';
-import { FooterComponent } from './footer/footer';
-import { HeroComponent } from './hero/hero';
-import { NavigationComponent } from './navigation/navigation';
-import { SkillsComponent } from './skills/skills';
-
+import { About } from './about/about';
+import { Footer } from './footer/footer';
+import { Hero } from './hero/hero';
+import { Navigation } from './navigation/navigation';
+import { Skills } from './skills/skills';
 
 @Component({
   selector: 'app-root',
-  imports: [
-    NavigationComponent,
-    HeroComponent,
-    AboutComponent,
-    FooterComponent,
-    SkillsComponent,
-  ],
+  imports: [Navigation, Hero, About, Footer, Skills],
   template: `
     <div class="min-h-screen bg-gray-50">
       <JM-navigation></JM-navigation>
@@ -27,4 +20,4 @@ import { SkillsComponent } from './skills/skills';
     </div>
   `,
 })
-export class AppComponent {}
+export class App {}
