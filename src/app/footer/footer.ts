@@ -1,11 +1,9 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject, Signal } from '@angular/core';
+import { LucideAngularModule } from 'lucide-angular';
 import {
-  GithubIcon,
-  LinkedinIcon,
-  TwitterIcon,
-  MailIcon,
-  LucideAngularModule,
-} from 'lucide-angular';
+  SocialMedia,
+} from '../shared/services/social-media';
+import { SocialMediaProfile } from '../shared/services/social-media.model';
 
 @Component({
   selector: 'JM-footer',
@@ -15,10 +13,10 @@ import {
 })
 export class FooterComponent {
   thisYear = new Date().getFullYear();
-  icons = {
-    github: GithubIcon,
-    linkedin: LinkedinIcon,
-    twitter: TwitterIcon,
-    mail: MailIcon,
-  };
+  socialMediaProfiles: Signal<SocialMediaProfile[]>;
+
+  constructor() {
+    const socialMediaService = inject(SocialMedia);
+    this.socialMediaProfiles = socialMediaService.socialMediaProfiles;
+  }
 }

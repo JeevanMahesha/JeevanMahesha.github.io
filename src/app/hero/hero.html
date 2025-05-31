@@ -15,24 +15,15 @@
       experiences and building innovative solutions that make a difference.
     </p>
     <div class="flex justify-center space-x-6 mb-12">
+      @for (profile of socialMediaProfiles(); track profile.name) {
       <a
-        href="#"
+        [href]="profile.url"
         class="text-gray-600 hover:text-blue-600 transition-colors transform hover:scale-110"
+        [attr.aria-label]="profile.ariaLabel"
       >
-        <lucide-icon [name]="icons.github" size="24"></lucide-icon>
+        <lucide-icon [name]="profile.name" size="24"></lucide-icon>
       </a>
-      <a
-        href="#"
-        class="text-gray-600 hover:text-blue-600 transition-colors transform hover:scale-110"
-      >
-        <lucide-icon [name]="icons.linkedin" size="24"></lucide-icon>
-      </a>
-      <a
-        href="#"
-        class="text-gray-600 hover:text-blue-600 transition-colors transform hover:scale-110"
-      >
-        <lucide-icon [name]="icons.twitter" size="24"></lucide-icon>
-      </a>
+      }
     </div>
   </div>
 </section>
