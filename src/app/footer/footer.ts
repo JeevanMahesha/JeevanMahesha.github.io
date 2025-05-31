@@ -1,8 +1,11 @@
-import { ChangeDetectionStrategy, Component, inject, Signal } from '@angular/core';
-import { LucideAngularModule } from 'lucide-angular';
 import {
-  SocialMedia,
-} from '../shared/services/social-media';
+  ChangeDetectionStrategy,
+  Component,
+  inject,
+  Signal,
+} from '@angular/core';
+import { LucideAngularModule } from 'lucide-angular';
+import { SocialMedia } from '../shared/services/social-media';
 import { SocialMediaProfile } from '../shared/services/social-media.model';
 
 @Component({
@@ -11,7 +14,7 @@ import { SocialMediaProfile } from '../shared/services/social-media.model';
   templateUrl: './footer.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class FooterComponent {
+export class Footer {
   thisYear = new Date().getFullYear();
   socialMediaProfiles: Signal<SocialMediaProfile[]>;
 

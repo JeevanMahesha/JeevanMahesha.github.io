@@ -15,7 +15,7 @@ import { SocialMediaProfile } from '../shared/services/social-media.model';
   templateUrl: './hero.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class HeroComponent {
+export class Hero {
   socialMediaProfiles: Signal<SocialMediaProfile[]>;
 
   constructor() {

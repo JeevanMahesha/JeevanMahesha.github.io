@@ -5,7 +5,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   templateUrl: './skills.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SkillsComponent {
+export class Skills {
   skills = [
     {
       category: 'Frontend',
