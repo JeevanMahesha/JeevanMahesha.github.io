@@ -2,20 +2,24 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 import {
   GithubIcon,
   LinkedinIcon,
-  LucideAngularModule,
   TwitterIcon,
+  MailIcon,
+  LucideAngularModule,
 } from 'lucide-angular';
 
 @Component({
-  selector: 'JM-hero',
+  selector: 'JM-footer',
   imports: [LucideAngularModule],
-  templateUrl: './hero.component.html',
+  templateUrl: './footer.html',
+  styles: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class HeroComponent {
+export class FooterComponent {
+  thisYear = new Date().getFullYear();
   icons = {
     github: GithubIcon,
     linkedin: LinkedinIcon,
     twitter: TwitterIcon,
+    mail: MailIcon,
   };
 }

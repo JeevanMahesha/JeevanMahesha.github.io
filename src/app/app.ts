@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
-import { NavigationComponent } from './navigation/navigation.component';
-import { HeroComponent } from './hero/hero.component';
-import { AboutComponent } from './about/about.component';
-import { FooterComponent } from './footer/footer.component';
-import { SkillsComponent } from './skills/skills.component';
+import { AboutComponent } from './about/about';
+import { FooterComponent } from './footer/footer';
+import { HeroComponent } from './hero/hero';
+import { NavigationComponent } from './navigation/navigation';
+import { SkillsComponent } from './skills/skills';
+
 
 @Component({
   selector: 'app-root',

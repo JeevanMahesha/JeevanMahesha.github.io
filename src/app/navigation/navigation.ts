@@ -10,7 +10,7 @@ import { LucideAngularModule, MenuIcon, X } from 'lucide-angular';
 @Component({
   selector: 'JM-navigation',
   imports: [LucideAngularModule, NgClass],
-  templateUrl: './navigation.component.html',
+  templateUrl: './navigation.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class NavigationComponent {
