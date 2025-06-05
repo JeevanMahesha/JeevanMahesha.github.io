@@ -18,7 +18,11 @@
         </a>
         }
       </div>
-      <button class="md:hidden text-gray-600" (click)="toggleMenu()">
+      <button
+        class="md:hidden text-gray-600"
+        aria-label="Toggle menu"
+        (click)="toggleMenu()"
+      >
         @if (isMenuOpen()) {
         <lucide-icon [name]="icons.x" size="24"></lucide-icon>
         } @else {
