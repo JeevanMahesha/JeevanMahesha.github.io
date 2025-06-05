@@ -13,10 +13,21 @@ import { Skills } from './skills/skills';
       <JM-navigation></JM-navigation>
       <main>
         <JM-hero></JM-hero>
+        @defer (on viewport) {
         <JM-about></JM-about>
+        } @placeholder {
+        <div class="h-screen bg-gray-50"></div>
+        } @defer (on viewport) {
         <JM-skills></JM-skills>
+        } @placeholder {
+        <div class="h-screen bg-gray-50"></div>
+        }
       </main>
+      @defer (on viewport) {
       <JM-footer></JM-footer>
+      } @placeholder {
+      <div class="h-screen bg-gray-50"></div>
+      }
     </div>
   `,
 })
