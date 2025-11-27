@@ -42,6 +42,7 @@ export class Skills {
         'FastAPI',
         'MongoDB',
         'Firebase',
+        'python',
       ],
     },
     {
@@ -49,7 +50,7 @@ export class Skills {
       items: [
         'Git',
         'Docker',
-        'amazonwebservices',
+        'esbuild',
         'github',
         'githubpages',
         'githubactions',
