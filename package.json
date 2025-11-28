@@ -3,10 +3,11 @@
   "version": "0.0.0",
   "packageManager": "pnpm@10.11.0",
   "scripts": {
-    "ng": "ng",
+    "lint": "ng lint",
+    "prepare": "husky",
     "start": "ng serve",
     "build": "ng build --configuration production",
-    "watch": "ng build --watch --configuration development"
+    "commit": "cz"
   },
   "private": true,
   "dependencies": {
@@ -28,7 +29,15 @@
     "@angular/build": "^21.0.1",
     "@angular/cli": "^21.0.1",
     "@angular/compiler-cli": "^21.0.1",
+    "@commitlint/cli": "^20.1.0",
+    "@commitlint/config-conventional": "^20.0.0",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "commitizen": "^4.3.1",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^9.1.7",
     "postcss": "^8.5.3",
+    "semantic-release": "^25.0.2",
     "typescript": "~5.9.3"
   }
 }
