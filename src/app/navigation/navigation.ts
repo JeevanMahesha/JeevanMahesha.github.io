@@ -1,4 +1,3 @@
-import { NgClass } from '@angular/common';
 import {
   ChangeDetectionStrategy,
   Component,
@@ -9,7 +8,7 @@ import { LucideAngularModule, MenuIcon, X } from 'lucide-angular';
 
 @Component({
   selector: 'JM-navigation',
-  imports: [LucideAngularModule, NgClass],
+  imports: [LucideAngularModule],
   templateUrl: './navigation.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
