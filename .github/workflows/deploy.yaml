@@ -1,4 +1,4 @@
-name: Build and Deploy
+name: Deploy
 on:
   push:
     branches:
@@ -17,7 +17,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version-file: .node-version
-          cache: 'pnpm'
+          cache: "pnpm"
       - name: Install Dependencies
         run: pnpm install --frozen-lockfile
       - name: Build
@@ -45,7 +45,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version-file: .node-version
-          cache: 'pnpm'
+          cache: "pnpm"
       - name: Install Dependencies
         run: pnpm install --frozen-lockfile
       - name: Release
