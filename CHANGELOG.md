@@ -1,3 +1,5 @@
+## [1.0.3](https://github.com/JeevanMahesha/JeevanMahesha.github.io/compare/v1.0.2...v1.0.3) (2026-01-15)
+
 ## [1.0.2](https://github.com/JeevanMahesha/JeevanMahesha.github.io/compare/v1.0.1...v1.0.2) (2026-01-01)
 
 ## [1.0.1](https://github.com/JeevanMahesha/JeevanMahesha.github.io/compare/v1.0.0...v1.0.1) (2025-12-04)
