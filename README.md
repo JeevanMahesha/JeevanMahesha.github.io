@@ -1,6 +1,6 @@
 # Jeevan Mahesha - Personal Portfolio 🚀
 
-[![Build and Deploy](https://github.com/JeevanMahesha/JeevanMahesha.github.io/actions/workflows/main.yaml/badge.svg)](https://github.com/JeevanMahesha/JeevanMahesha.github.io/actions/workflows/main.yaml)
+[![Deploy](https://github.com/JeevanMahesha/JeevanMahesha.github.io/actions/workflows/deploy.yaml/badge.svg)](https://github.com/JeevanMahesha/JeevanMahesha.github.io/actions/workflows/deploy.yaml)
 
 A modern, responsive personal portfolio website showcasing my projects, skills, and professional experience. Built with Angular and styled with Tailwind CSS for a clean, performant user experience.
 
