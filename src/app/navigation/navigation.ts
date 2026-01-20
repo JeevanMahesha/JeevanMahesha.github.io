@@ -22,6 +22,7 @@ export class Navigation {
   };
 
   navLinks = [
+    { href: '#hero', label: 'Home' },
     { href: '#about', label: 'About' },
     { href: '#skills', label: 'Skills' },
     // { href: '#projects', label: 'Projects' },
