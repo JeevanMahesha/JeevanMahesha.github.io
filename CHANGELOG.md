@@ -1,3 +1,10 @@
+# [2.0.0](https://github.com/JeevanMahesha/JeevanMahesha.github.io/compare/v1.0.3...v2.0.0) (2026-02-09)
+
+
+### Features
+
+* add 'Home' navigation link and corresponding hero section ID ([9e8e961](https://github.com/JeevanMahesha/JeevanMahesha.github.io/commit/9e8e961699b8595ddc8ea92ad19cf20bb34e588b))
+
 ## [1.0.3](https://github.com/JeevanMahesha/JeevanMahesha.github.io/compare/v1.0.2...v1.0.3) (2026-01-15)
 
 ## [1.0.2](https://github.com/JeevanMahesha/JeevanMahesha.github.io/compare/v1.0.1...v1.0.2) (2026-01-01)
