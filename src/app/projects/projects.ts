@@ -2,7 +2,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { GithubIcon, LucideAngularModule, ExternalLink } from 'lucide-angular';
 
 @Component({
-  selector: 'JM-projects',
+  selector: 'jm-projects',
   imports: [LucideAngularModule],
   templateUrl: './projects.html',
   changeDetection: ChangeDetectionStrategy.OnPush,

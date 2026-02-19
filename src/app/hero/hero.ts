@@ -10,7 +10,7 @@ import { SocialMedia } from '../shared/services/social-media';
 import { SocialMediaProfile } from '../shared/services/social-media.model';
 
 @Component({
-  selector: 'JM-hero',
+  selector: 'jm-hero',
   imports: [LucideAngularModule],
   templateUrl: './hero.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -23,7 +23,7 @@ export class Hero {
     this.socialMediaProfiles = computed(() =>
       socialMediaService
         .socialMediaProfiles()
-        .filter((profile) => profile.name !== 'mail')
+        .filter((profile) => profile.name !== 'mail'),
     );
   }
 }

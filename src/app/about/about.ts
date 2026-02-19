@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
-  selector: 'JM-about',
+  selector: 'jm-about',
   template: `
     <section id="about" class="bg-white">
       <div class="section-container">

@@ -19,15 +19,15 @@ export default defineConfig([
                 "error",
                 {
                     type: "attribute",
-                    prefix: "app",
-                    style: "camelCase",
+                    prefix: "jm",
+                    style: "kebab-case",
                 },
             ],
             "@angular-eslint/component-selector": [
                 "error",
                 {
                     type: "element",
-                    prefix: "app",
+                    prefix: "jm",
                     style: "kebab-case",
                 },
             ],

@@ -9,7 +9,7 @@ import { SocialMedia } from '../shared/services/social-media';
 import { SocialMediaProfile } from '../shared/services/social-media.model';
 
 @Component({
-  selector: 'JM-footer',
+  selector: 'jm-footer',
   imports: [LucideAngularModule],
   templateUrl: './footer.html',
   changeDetection: ChangeDetectionStrategy.OnPush,

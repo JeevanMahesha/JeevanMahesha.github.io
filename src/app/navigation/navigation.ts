@@ -7,7 +7,7 @@ import {
 import { LucideAngularModule, MenuIcon, X } from 'lucide-angular';
 
 @Component({
-  selector: 'JM-navigation',
+  selector: 'jm-navigation',
   imports: [LucideAngularModule],
   templateUrl: './navigation.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
