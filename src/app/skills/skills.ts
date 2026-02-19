@@ -4,6 +4,7 @@ import {
   Type,
   viewChild,
   ViewContainerRef,
+  AfterViewInit,
 } from '@angular/core';
 import {
   SiAngularIcon,
@@ -48,21 +49,21 @@ const CATEGORY = {
 };
 
 @Component({
-  selector: 'JM-skills',
+  selector: 'jm-skills',
   templateUrl: './skills.html',
   imports: [],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class Skills {
+export class Skills implements AfterViewInit {
   frontendRef = viewChild('Frontend', { read: ViewContainerRef });
   backendRef = viewChild('Backend', { read: ViewContainerRef });
   toolsRef = viewChild('Tools', { read: ViewContainerRef });
   categoryValue = CATEGORY;
 
-  skills: Array<{
+  skills: {
     category: string;
     icons: Type<unknown>[];
-  }> = [
+  }[] = [
     {
       category: 'Frontend',
       icons: [
@@ -117,18 +118,21 @@ export class Skills {
     this.skills.forEach((skillSet) => {
       skillSet.icons.forEach((icon) => {
         switch (skillSet.category) {
-          case CATEGORY.frontend:
+          case CATEGORY.frontend: {
             const frontendRef = this.frontendRef()?.createComponent(icon);
             frontendRef?.location.nativeElement.classList.add('size-8');
             break;
-          case CATEGORY.backend:
+          }
+          case CATEGORY.backend: {
             const backendRef = this.backendRef()?.createComponent(icon);
             backendRef?.location.nativeElement.classList.add('size-8');
             break;
-          case CATEGORY.tools:
+          }
+          case CATEGORY.tools: {
             const toolsRef = this.toolsRef()?.createComponent(icon);
             toolsRef?.location.nativeElement.classList.add('size-8');
             break;
+          }
         }
       });
     });

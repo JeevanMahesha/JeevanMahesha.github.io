@@ -6,27 +6,29 @@ import { Navigation } from './navigation/navigation';
 import { Skills } from './skills/skills';
 
 @Component({
+  // eslint-disable-next-line @angular-eslint/component-selector
   selector: 'app-root',
   imports: [Navigation, Hero, About, Footer, Skills],
   template: `
     <div class="min-h-screen bg-gray-50">
-      <JM-navigation />
+      <jm-navigation />
       <main>
-        <JM-hero />
+        <jm-hero />
         @defer (on viewport) {
-        <JM-about />
+          <jm-about />
         } @placeholder {
-        <div class="h-screen bg-gray-50"></div>
-        } @defer (on viewport) {
-        <JM-skills />
+          <div class="h-screen bg-gray-50"></div>
+        }
+        @defer (on viewport) {
+          <jm-skills />
         } @placeholder {
-        <div class="h-screen bg-gray-50"></div>
+          <div class="h-screen bg-gray-50"></div>
         }
       </main>
       @defer (on viewport) {
-      <JM-footer />
+        <jm-footer />
       } @placeholder {
-      <div class="h-screen bg-gray-50"></div>
+        <div class="h-screen bg-gray-50"></div>
       }
     </div>
   `,
