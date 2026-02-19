@@ -1,3 +1,12 @@
+# [3.0.0](https://github.com/JeevanMahesha/JeevanMahesha.github.io/compare/v2.0.0...v3.0.0) (2026-02-19)
+
+
+### Features
+
+* configure semantic-release with Angular preset, updated release rules, and customized release notes generation ([efb42af](https://github.com/JeevanMahesha/JeevanMahesha.github.io/commit/efb42af5c393d7853cc575a80bbcfb841e0945f8))
+* introduce `lint:fix` script and pre-commit hook for linting ([950b119](https://github.com/JeevanMahesha/JeevanMahesha.github.io/commit/950b119f86252a0c1ed721f24036f39849551ebd))
+* set up ESLint with Angular-specific rules and integrate into the build process ([3f4c87d](https://github.com/JeevanMahesha/JeevanMahesha.github.io/commit/3f4c87dd6e4f42f124908e6646e656506eaf79cd))
+
 # [2.0.0](https://github.com/JeevanMahesha/JeevanMahesha.github.io/compare/v1.0.3...v2.0.0) (2026-02-09)
 
 
