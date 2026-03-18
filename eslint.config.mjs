@@ -1,44 +1,18 @@
-// @ts-check
-import eslint from "@eslint/js";
-import { defineConfig } from "eslint/config";
-import tseslint from "typescript-eslint";
-import angular from "angular-eslint";
+import { defineConfig, globalIgnores } from "eslint/config";
+import nextVitals from "eslint-config-next/core-web-vitals";
+import nextTs from "eslint-config-next/typescript";
 
-export default defineConfig([
-    {
-        files: ["**/*.ts"],
-        extends: [
-            eslint.configs.recommended,
-            tseslint.configs.recommended,
-            tseslint.configs.stylistic,
-            angular.configs.tsRecommended,
-        ],
-        processor: angular.processInlineTemplates,
-        rules: {
-            "@angular-eslint/directive-selector": [
-                "error",
-                {
-                    type: "attribute",
-                    prefix: "jm",
-                    style: "kebab-case",
-                },
-            ],
-            "@angular-eslint/component-selector": [
-                "error",
-                {
-                    type: "element",
-                    prefix: "jm",
-                    style: "kebab-case",
-                },
-            ],
-        },
-    },
-    {
-        files: ["**/*.html"],
-        extends: [
-            angular.configs.templateRecommended,
-            angular.configs.templateAccessibility,
-        ],
-        rules: {},
-    }
+const eslintConfig = defineConfig([
+  ...nextVitals,
+  ...nextTs,
+  // Override default ignores of eslint-config-next.
+  globalIgnores([
+    // Default ignores of eslint-config-next:
+    ".next/**",
+    "out/**",
+    "build/**",
+    "next-env.d.ts",
+  ]),
 ]);
+
+export default eslintConfig;
