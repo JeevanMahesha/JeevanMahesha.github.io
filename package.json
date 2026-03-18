@@ -1,6 +1,6 @@
 {
-  "name": "my-app",
-  "version": "0.1.0",
+  "name": "jeevan-mahesha.github.io",
+  "version": "3.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -8,7 +8,9 @@
     "start": "next start",
     "lint": "eslint",
     "prepare": "husky",
-    "commitlint": "commitlint"
+    "commitlint": "commitlint",
+    "release": "semantic-release",
+    "release:dry-run": "semantic-release --dry-run"
   },
   "dependencies": {
     "next": "16.1.7",
@@ -18,6 +20,11 @@
   "devDependencies": {
     "@commitlint/cli": "^20.5.0",
     "@commitlint/config-conventional": "^20.5.0",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/exec": "^7.1.0",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^12.0.6",
+    "@semantic-release/npm": "^13.1.5",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
@@ -25,6 +32,7 @@
     "eslint": "^9",
     "eslint-config-next": "16.1.7",
     "husky": "^9.1.7",
+    "semantic-release": "^25.0.3",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
