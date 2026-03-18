@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { ThemeProvider } from "./components/theme-provider";
 
 export const metadata: Metadata = {
   title: "Jeevan Mahesha | Creative Engineer Portfolio",
@@ -43,7 +44,7 @@ export default function RootLayout({
         />
       </head>
       <body className="font-body antialiased selection:bg-accent/30 overflow-x-hidden">
-        {children}
+        <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>
   );
