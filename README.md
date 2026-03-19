@@ -1,83 +1,74 @@
-# Jeevan Mahesha - Personal Portfolio 🚀
+# Jeevan Mahesha - Personal Portfolio
 
 [![Deploy](https://github.com/JeevanMahesha/JeevanMahesha.github.io/actions/workflows/deploy.yaml/badge.svg)](https://github.com/JeevanMahesha/JeevanMahesha.github.io/actions/workflows/deploy.yaml)
 
-A modern, responsive personal portfolio website showcasing my projects, skills, and professional experience. Built with Angular and styled with Tailwind CSS for a clean, performant user experience.
+A modern, responsive personal portfolio website showcasing projects, skills, and professional experience. Built with Next.js and Tailwind CSS.
 
-## 🌟 Features
+## Features
 
-- **Responsive Design**: Optimized for all device sizes
-- **Modern UI/UX**: Clean and professional interface
-- **Fast Performance**: Built with Angular for optimal speed
-- **Projects Showcase**: Detailed presentation of my work
-- **Skills Section**: Comprehensive overview of technical abilities
-- **About Section**: Personal and professional background
-- **Contact Information**: Easy ways to get in touch
+- **Responsive design**: Optimized for all device sizes
+- **Modern UI/UX**: Clean, professional interface
+- **Fast performance**: Static export for a fast, cache-friendly site
+- **Projects showcase**: Presentation of work and tooling
+- **Skills & about**: Background and technical focus
+- **Contact**: Easy ways to get in touch
 
-## 🛠️ Tech Stack
+## Tech stack
 
-- **Framework**: Angular
+- **Framework**: [Next.js](https://nextjs.org/) (App Router)
+- **UI**: React, Framer Motion
 - **Styling**: Tailwind CSS
-- **Icons**: Lucide Angular
+- **Icons**: Lucide React, Simple Icons
 - **Language**: TypeScript
-- **Build Tool**: Angular CLI
-- **Deployment**: GitHub Pages with automated CI/CD
+- **Package manager**: pnpm
 
-## 🚀 Getting Started
+## Getting started
 
 ### Prerequisites
 
-- Node.js (mentioned in .node-version file)
-- npm
+- Node.js (see [.node-version](.node-version))
+- [pnpm](https://pnpm.io/)
 
 ### Installation
-
-1. Clone the repository:
 
 ```bash
 git clone https://github.com/JeevanMahesha/JeevanMahesha.github.io.git
 cd JeevanMahesha.github.io
+pnpm install
 ```
 
-2. Install dependencies:
+### Development
 
 ```bash
-npm install
+pnpm dev
 ```
 
-3. Start the development server:
+Open [http://localhost:3000](http://localhost:3000).
+
+### Production build
+
+`next build` is configured with static export (`output: 'export'`). The static site is emitted to `out/`.
 
 ```bash
-npm start
+pnpm build
 ```
 
-4. Open your browser and navigate to `http://localhost:4200`
-
-### Build for Production
-
-```bash
-npm run build
-```
-
-## 📁 Project Structure
+## Project structure
 
 ```
-src/
-├── app/
-│   ├── about/          # About section component
-│   ├── footer/         # Footer component
-│   ├── hero/           # Hero/landing section
-│   ├── navigation/     # Navigation component
-│   ├── projects/       # Projects showcase
-│   ├── shared/         # Shared services and utilities
-│   └── skills/         # Skills section
-└── ...
+app/
+├── components/     # UI sections and shared components
+├── globals.css
+├── layout.tsx
+└── page.tsx
 ```
 
-## 🔄 Continuous Deployment
+## Deployment (GitHub Pages)
 
-This portfolio is automatically deployed to GitHub Pages using GitHub Actions. Every push to the main branch triggers a new deployment.
+The site is **static-exported** Next.js: CI runs `pnpm build`, then deploys the contents of **`out/`** to the **`gh-page`** branch via [GitHub Actions](.github/workflows/deploy.yaml).
+
+In the repository **Settings → Pages**, the source should match how you publish (e.g. branch `gh-page` at `/` root, or your chosen Pages source).
 
 ---
 
-⭐ If you found this portfolio inspiring, please consider giving it a star!
+If you found this portfolio useful, consider giving the repo a star.
