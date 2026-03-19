@@ -1,3 +1,9 @@
+## [4.0.1](https://github.com/JeevanMahesha/JeevanMahesha.github.io/compare/v4.0.0...v4.0.1) (2026-03-19)
+
+### 🧹 Chores
+
+- add .nojekyll file to disable Jekyll processing during GitHub Pages deployment ([d4a8a44](https://github.com/JeevanMahesha/JeevanMahesha.github.io/commit/d4a8a44caabb10828c0efef0e3e72ee1cf24580d))
+
 ## [4.0.0](https://github.com/JeevanMahesha/JeevanMahesha.github.io/compare/v3.0.0...v4.0.0) (2026-03-19)
 
 ### ⚠ BREAKING CHANGES
