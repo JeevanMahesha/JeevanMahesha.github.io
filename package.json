@@ -7,20 +7,22 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
     "prepare": "husky",
     "commitlint": "commitlint",
     "release": "semantic-release",
     "release:dry-run": "semantic-release --dry-run"
   },
   "dependencies": {
+    "@icons-pack/react-simple-icons": "^11.1.0",
+    "framer-motion": "^12.4.7",
+    "lucide-react": "^0.475.0",
     "next": "16.1.7",
     "react": "19.2.3",
     "react-dom": "19.2.3",
-    "framer-motion": "^12.4.7",
-    "lucide-react": "^0.475.0",
     "tailwind-merge": "^3.0.1",
-    "tailwindcss-animate": "^1.0.7",
-    "@icons-pack/react-simple-icons": "^11.1.0"
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "@commitlint/cli": "^20.5.0",
@@ -36,7 +38,10 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.1.7",
+    "eslint-config-prettier": "^10.1.8",
     "husky": "^9.1.7",
+    "lint-staged": "^16.4.0",
+    "prettier": "^3.8.1",
     "semantic-release": "^25.0.3",
     "tailwindcss": "^4",
     "typescript": "^5"
