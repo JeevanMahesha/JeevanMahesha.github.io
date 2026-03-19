@@ -41,7 +41,7 @@ export function AboutSection() {
             className="relative"
           >
             <div className="relative w-full aspect-square max-w-md mx-auto">
-              <div className="absolute inset-0 bg-gradient-to-tr from-primary/30 to-secondary/30 rounded-3xl blur-2xl animate-pulse" />
+              <div className="absolute inset-0 bg-linear-to-tr from-primary/30 to-secondary/30 rounded-3xl blur-2xl animate-pulse" />
               <div className="relative h-full w-full rounded-3xl overflow-hidden glass border-white/20">
                 <Image
                   src="/JeevanMahesha.webp"
@@ -93,7 +93,7 @@ export function AboutSection() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              {values.map((value, index) => (
+              {values.map((value) => (
                 <div
                   key={value.title}
                   className="p-4 rounded-2xl glass border-white/5 space-y-3"
