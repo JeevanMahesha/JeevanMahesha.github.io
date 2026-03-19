@@ -22,7 +22,7 @@ const socials = [
   {
     name: "LinkedIn",
     icon: Linkedin,
-    link: "https://linkedin.com",
+    link: "https://www.linkedin.com/in/jeevanmahesha/",
     color:
       "hover:border-blue-500/40 hover:bg-blue-500/5 dark:hover:bg-blue-500/10",
     iconColor:
@@ -31,7 +31,7 @@ const socials = [
   {
     name: "Twitter",
     icon: Twitter,
-    link: "https://twitter.com",
+    link: "https://x.com/jeevanmahesha",
     color:
       "hover:border-sky-500/40 hover:bg-sky-500/5 dark:hover:bg-sky-500/10",
     iconColor:
@@ -40,7 +40,7 @@ const socials = [
   {
     name: "Email",
     icon: Mail,
-    link: "mailto:hello@jeevanmahesha.dev",
+    link: "mailto:csejeevanmahesha@gmail.com",
     color:
       "hover:border-primary/40 hover:bg-primary/5 dark:hover:bg-primary/10",
     iconColor: "text-primary/70 group-hover:text-primary",
