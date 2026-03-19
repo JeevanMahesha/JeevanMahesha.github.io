@@ -4,12 +4,22 @@ import { motion } from "framer-motion";
 import {
   Github,
   Linkedin,
-  Twitter,
   Mail,
   ArrowUpRight,
   Globe,
+  createLucideIcon,
 } from "lucide-react";
 
+const XIcon = createLucideIcon("X", [
+  [
+    "path",
+    {
+      d: "M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z",
+      stroke: "none",
+      fill: "currentColor",
+    },
+  ],
+]);
 const socials = [
   {
     name: "GitHub",
@@ -30,12 +40,11 @@ const socials = [
   },
   {
     name: "Twitter",
-    icon: Twitter,
+    icon: XIcon,
     link: "https://x.com/jeevanmahesha",
     color:
-      "hover:border-sky-500/40 hover:bg-sky-500/5 dark:hover:bg-sky-500/10",
-    iconColor:
-      "text-sky-500/70 group-hover:text-sky-600 dark:group-hover:text-sky-300",
+      "hover:border-zinc-500/40 hover:bg-zinc-500/5 dark:hover:bg-zinc-500/10",
+    iconColor: "text-muted-foreground group-hover:text-foreground",
   },
   {
     name: "Email",
