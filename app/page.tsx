@@ -1,6 +1,7 @@
 import { Navbar } from "./components/navbar";
 import { Hero } from "./components/hero";
 import { AboutSection } from "./components/about-section";
+import { Toolbox } from "./components/toolbox";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <AboutSection />
+      <Toolbox />
     </main>
   );
 }
