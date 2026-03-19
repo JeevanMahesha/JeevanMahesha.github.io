@@ -1,3 +1,51 @@
+## [4.0.0](https://github.com/JeevanMahesha/JeevanMahesha.github.io/compare/v3.0.0...v4.0.0) (2026-03-19)
+
+### ⚠ BREAKING CHANGES
+
+- update layout metadata and styling
+
+### ✨ Features
+
+- add @icons-pack/react-simple-icons dependency for enhanced icon support ([9c9fab5](https://github.com/JeevanMahesha/JeevanMahesha.github.io/commit/9c9fab570d1cf941ce0adbae32b19a5e7af6f7e6))
+- add AboutSection component to enhance homepage with additional content ([7145ba9](https://github.com/JeevanMahesha/JeevanMahesha.github.io/commit/7145ba98035a92e62363aa73a028d1c1075f5f81))
+- add ContactSection component for user engagement ([7534536](https://github.com/JeevanMahesha/JeevanMahesha.github.io/commit/7534536214ce8f4f912d0692545e8e2e5f7bb75e))
+- add Footer component to enhance homepage with copyright information ([407d9b0](https://github.com/JeevanMahesha/JeevanMahesha.github.io/commit/407d9b0b03b92f2f25a75cf056334f6556af5e74))
+- add Hero component to enhance homepage with interactive elements ([ca3c611](https://github.com/JeevanMahesha/JeevanMahesha.github.io/commit/ca3c6117b25f5233266afb2be3174de083903888))
+- add Tailwind CSS configuration and update global styles ([4feb960](https://github.com/JeevanMahesha/JeevanMahesha.github.io/commit/4feb960f4f92187a502bd26071582728a73f9756))
+- add ThemeToggle component for dark/light mode switching ([9fe08f3](https://github.com/JeevanMahesha/JeevanMahesha.github.io/commit/9fe08f35577028224c9fa1bc99802619510b555c))
+- add Toolbox component to showcase technical skills and tools ([5c31674](https://github.com/JeevanMahesha/JeevanMahesha.github.io/commit/5c3167466e32d7e2602b4f1296f31528bc373b52))
+- implement theme provider for dark/light mode support ([c2340be](https://github.com/JeevanMahesha/JeevanMahesha.github.io/commit/c2340be57950fafc6f4e184927e76110c82ad6d1))
+- refactor homepage layout and add Navbar component ([ed07155](https://github.com/JeevanMahesha/JeevanMahesha.github.io/commit/ed07155d9ec49b2030f6d38fbdde0325fe69a8b7))
+- update AboutSection with new image and loading behavior ([82e1445](https://github.com/JeevanMahesha/JeevanMahesha.github.io/commit/82e14451b1dd9df9d45c58cf7faf2cf8c2de488f))
+- update layout metadata and styling ([206886b](https://github.com/JeevanMahesha/JeevanMahesha.github.io/commit/206886be75a00044202b7c54e1b4eaf78e908df7))
+
+### 🐛 Bug Fixes
+
+- correct gradient class in AboutSection component and disable ESLint rule for custom font in layout ([d075da6](https://github.com/JeevanMahesha/JeevanMahesha.github.io/commit/d075da69da0d9f0a6e13aa26a6a3a88607ae14f4))
+- update social media links in ContactSection component ([8c6e439](https://github.com/JeevanMahesha/JeevanMahesha.github.io/commit/8c6e439bc39d5fbf696e31bd3f4483fc6a6bb493))
+
+### 🛠 Refactors
+
+- update Twitter icon in ContactSection component ([9963014](https://github.com/JeevanMahesha/JeevanMahesha.github.io/commit/996301424fcf7cf5e8bc0bccc1512230a1b4128a))
+
+### 🤖 CI
+
+- deploy Next.js static export to GitHub Pages (out/) ([4be14ac](https://github.com/JeevanMahesha/JeevanMahesha.github.io/commit/4be14ace6e6c4830371a85783f6ac3ed20da8803))
+
+### 🧹 Chores
+
+- add commitlint and husky for commit message validation and linting ([aedb080](https://github.com/JeevanMahesha/JeevanMahesha.github.io/commit/aedb080c185087b9b28b01b8e53aa97114f7cfc3))
+- add new dependencies for animation and styling ([5dbcb11](https://github.com/JeevanMahesha/JeevanMahesha.github.io/commit/5dbcb11c951577d9fa717fceafa2fcd134f888f4))
+- configure linting and formatting tools ([4eaad26](https://github.com/JeevanMahesha/JeevanMahesha.github.io/commit/4eaad26e5bf8041c55594481507f7d80a7d7a147))
+- configure semantic-release for automated versioning and release management ([95d704a](https://github.com/JeevanMahesha/JeevanMahesha.github.io/commit/95d704a178b0bf0a3d8cc8747a1b8604a03256b0))
+- migrate project from Angular to Next.js, update dependencies, and restructure configuration files ([5032f2f](https://github.com/JeevanMahesha/JeevanMahesha.github.io/commit/5032f2f30366c3f6dc4a5b64e9807dd15bd0d9a9))
+- migrate semantic-release configuration to release.config.mjs ([49a57b2](https://github.com/JeevanMahesha/JeevanMahesha.github.io/commit/49a57b279983936ad2b64bd32c208bac1fb07829))
+- remove outdated package.old.json file ([ad1456e](https://github.com/JeevanMahesha/JeevanMahesha.github.io/commit/ad1456e140d8bb27e319f2d2d2ae1fe7db5e0d2a))
+- standardize configuration files and improve semantic-release setup ([2e60706](https://github.com/JeevanMahesha/JeevanMahesha.github.io/commit/2e60706a15fac6269ca0bbc7152a8a2a4192b998))
+- update commitlint configuration to enforce body line length ([2f09036](https://github.com/JeevanMahesha/JeevanMahesha.github.io/commit/2f09036a062f37263a48496a9524a21067d243ac))
+- update GitHub Actions workflow for improved Node.js and pnpm setup ([6d2b2b9](https://github.com/JeevanMahesha/JeevanMahesha.github.io/commit/6d2b2b977341711720e4e9d541c7bc2e9c5c3421))
+- update pnpm action version in GitHub Actions workflow ([38914a0](https://github.com/JeevanMahesha/JeevanMahesha.github.io/commit/38914a00bf8e2386b0364d6a9bd94215e1fbf62f))
+
 # [3.0.0](https://github.com/JeevanMahesha/JeevanMahesha.github.io/compare/v2.0.0...v3.0.0) (2026-02-19)
 
 ### Features
