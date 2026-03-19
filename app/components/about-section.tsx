@@ -44,11 +44,13 @@ export function AboutSection() {
               <div className="absolute inset-0 bg-gradient-to-tr from-primary/30 to-secondary/30 rounded-3xl blur-2xl animate-pulse" />
               <div className="relative h-full w-full rounded-3xl overflow-hidden glass border-white/20">
                 <Image
-                  src="https://picsum.photos/seed/engineer/600/600"
+                  src="/JeevanMahesha.webp"
                   alt="Jeevan Mahesha"
+                  loading="eager"
                   fill
                   className="object-cover grayscale hover:grayscale-0 transition-all duration-700"
                   data-ai-hint="professional engineer"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
               </div>
 
