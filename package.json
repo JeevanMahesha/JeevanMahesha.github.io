@@ -19,7 +19,8 @@
     "framer-motion": "^12.4.7",
     "lucide-react": "^0.475.0",
     "tailwind-merge": "^3.0.1",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "@icons-pack/react-simple-icons": "^11.1.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^20.5.0",
