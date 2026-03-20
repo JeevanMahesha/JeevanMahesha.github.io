@@ -24,7 +24,7 @@ const socials = [
   {
     name: "GitHub",
     icon: Github,
-    link: "https://github.com",
+    link: "https://github.com/JeevanMahesha",
     color:
       "hover:border-zinc-500/40 hover:bg-zinc-500/5 dark:hover:bg-zinc-900/50",
     iconColor: "text-muted-foreground group-hover:text-foreground",
