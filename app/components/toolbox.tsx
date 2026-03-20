@@ -17,7 +17,7 @@ import {
   SiCypress,
   SiGit,
   SiHtml5,
-  SiCss3,
+  SiCss,
   SiJavascript,
   SiBootstrap,
   SiRedux,
@@ -63,7 +63,7 @@ const tools = [
   { name: "TypeScript", icon: SiTypescript, color: "text-[#3178C6]" },
   { name: "JavaScript", icon: SiJavascript, color: "text-[#F7DF1E]" },
   { name: "HTML5", icon: SiHtml5, color: "text-[#E34F26]" },
-  { name: "CSS3", icon: SiCss3, color: "text-[#1572B6]" },
+  { name: "CSS", icon: SiCss, color: "text-[#1572B6]" },
 
   // Frontend Ecosystem
   { name: "RxJS", icon: SiReactivex, color: "text-[#B7178C]" },
