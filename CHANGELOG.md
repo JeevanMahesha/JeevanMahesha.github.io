@@ -1,3 +1,26 @@
+## [5.0.0](https://github.com/JeevanMahesha/JeevanMahesha.github.io/compare/v4.0.1...v5.0.0) (2026-03-20)
+
+### ✨ Features
+
+- enhance navigation and accessibility ([1398904](https://github.com/JeevanMahesha/JeevanMahesha.github.io/commit/1398904664543af5cfa6adae2c24f5160abe8fdf))
+
+### 🐛 Bug Fixes
+
+- add key attribute to XIcon in ContactSection component ([7825bce](https://github.com/JeevanMahesha/JeevanMahesha.github.io/commit/7825bceb8f10993fcef639b34968c02525dcabe6))
+- update CSS icon in Toolbox component ([640b84c](https://github.com/JeevanMahesha/JeevanMahesha.github.io/commit/640b84c24dc2c11a77339142f8a1f20d14ea7ac8))
+- update favicon.ico for improved branding ([399603e](https://github.com/JeevanMahesha/JeevanMahesha.github.io/commit/399603ef8a7e332d57e7b59efcd6d01e142a8046))
+- update GitHub link in ContactSection component ([0d37266](https://github.com/JeevanMahesha/JeevanMahesha.github.io/commit/0d37266be30954867e4a08d843f73de34dd4a429))
+
+### 🛠 Refactors
+
+- enhance navigation links and improve animation effects ([881c83a](https://github.com/JeevanMahesha/JeevanMahesha.github.io/commit/881c83a5cbce2579995377cf46a208fb6a443ed7))
+
+### 🧹 Chores
+
+- downgrade eslint version in package.json and pnpm-lock.yaml ([09c5bc1](https://github.com/JeevanMahesha/JeevanMahesha.github.io/commit/09c5bc193e19b01df81823b9ab6d191a7acda2a4))
+- update .gitignore to include pnpm store ([d31423a](https://github.com/JeevanMahesha/JeevanMahesha.github.io/commit/d31423a4867ed19fcc95d175f3a28177b86854c9))
+- update dependencies in package.json and pnpm-lock.yaml ([ca29852](https://github.com/JeevanMahesha/JeevanMahesha.github.io/commit/ca29852a2af91d582a254329dc94d3efdec2958f))
+
 ## [4.0.1](https://github.com/JeevanMahesha/JeevanMahesha.github.io/compare/v4.0.0...v4.0.1) (2026-03-19)
 
 ### 🧹 Chores

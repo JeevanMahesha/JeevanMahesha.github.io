@@ -1,6 +1,6 @@
 {
   "name": "jeevan-mahesha.github.io",
-  "version": "4.0.1",
+  "version": "5.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
