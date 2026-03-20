@@ -20,7 +20,7 @@ export function Navbar() {
     >
       <div className="w-full max-w-5xl glass rounded-full px-6 py-2 md:px-8 md:py-3 flex items-center justify-between shadow-2xl shadow-primary/10">
         <Link
-          href="/"
+          href="#hero"
           className="text-lg md:text-xl font-bold font-headline tracking-tighter group flex items-center shrink-0"
         >
           <span className="text-primary group-hover:text-secondary transition-colors duration-300">

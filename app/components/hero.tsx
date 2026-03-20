@@ -37,6 +37,7 @@ export function Hero() {
 
   return (
     <section
+      id="hero"
       onMouseMove={handleMouseMove}
       className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden"
     >
