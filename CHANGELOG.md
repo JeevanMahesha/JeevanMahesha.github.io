@@ -1,3 +1,9 @@
+## [5.1.0](https://github.com/JeevanMahesha/JeevanMahesha.github.io/compare/v5.0.0...v5.1.0) (2026-03-22)
+
+### 🛠 Refactors
+
+- implement dynamic imports for components in page.tsx ([a1847aa](https://github.com/JeevanMahesha/JeevanMahesha.github.io/commit/a1847aaa415d4d2d9f11a268c4d52a777a067369))
+
 ## [5.0.0](https://github.com/JeevanMahesha/JeevanMahesha.github.io/compare/v4.0.1...v5.0.0) (2026-03-20)
 
 ### ✨ Features
