@@ -1,3 +1,5 @@
+## [5.2.0](https://github.com/JeevanMahesha/JeevanMahesha.github.io/compare/v5.1.0...v5.2.0) (2026-07-23)
+
 ## [5.1.0](https://github.com/JeevanMahesha/JeevanMahesha.github.io/compare/v5.0.0...v5.1.0) (2026-03-22)
 
 ### 🛠 Refactors
